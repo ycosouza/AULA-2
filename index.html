@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Workshop</title>
+</head>
+<body>
+    <h1>FORMULÁRIO PARA WORKSHOP - COMECE NA INTERNET HOJE!</h1>
+    <hr>
+    <br>
+<form action="#" method="post">
+
+    <label for="nome">Nome:</label><br>
+    <input id="nome" name="nome" type="text" placeholder="Seu Nome Completo" required><br><br>
+    <label for="email">E-mail:</label><br>
+    <input id="email" name="email" type="email" placeholder="Digite seu email" required><br><br>
+    <label for="data de nascimento">Data de Nascimento:</label><br>
+    <input id="data de nascimento" name="data de nascimento" type="date"><br><br>
+    <label for="telefone">Telefone:</label><br>
+    <input id="telefone" name="telefone" type="tel" pattern="[0-9]{11}" placeholder="Seu número de telefone"  required><br><br>
+
+    <label for="area de interesse">Area de Interesse:</label><br>
+    <select name="area de interesse" id="area de interesse">
+        <option value="">Selecione</option>
+        <option value="Cursos Online">Venda de Cursos Online</option>
+        <option value="Ebook">Venda de E-book</option>
+        <option value="Ifluenciadora">Ser Digital Influencer</option>
+        <option value="Assistente Virtual">Ser Assistente Virtual</option>
+    </select><br>
+    <h4>Turno de Interesse:</h4>
+    <p>
+        <label><input type="radio" name="turno" value="manha" checked> Manha </label>
+        <label><input type="radio" name="turno" value="tarde" checked> Tarde </label>
+        <label><input type="radio" name="turno" value="noite"> Noite </label>
+    </p>
+
+    <label for="cidade">Cidade de Interesse:</label><br>
+    <input id="cidade" name="cidade" list="cidades">
+    <datalist id="cidades"> 
+        <option value="Feira de Santana"></option>
+        <option value="Salvador"></option>
+        <option value="Vitória da Conquista"></option>
+    </datalist><br><br>
+    
+    <label for="objetivo">Objetivo com o curso:</label><br>
+    <textarea name="objetivo" id="objetivo" rows="10" maxlength="500"></textarea><br><br>
+
+    <label for="expectativa">Expectativa para o Workshop</label><br>
+    <input id="expectativa" name="expectativa" type="number" min="1" max="5" step="1"><br><br>
+
+    <label><input type="checkbox" name="aceite" required>Aceito os termos</label><br>
+
+    <button type="submit">Enviar Formulário</button>
+    <button type="reset"> Limpar Formulário</button>
+</form>
+    
+</body>
+</html>
